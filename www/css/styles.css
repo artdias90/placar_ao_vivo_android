@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url(OpenSans-Regular.ttf);
+}
+
+body {
+  background: #CCC;
+  overflow-y:scroll;
+  font-family: 'Open Sans';
+}
+
+select {
+  margin: 3px 0;
+}
+
+.menu {
+  position: absolute;
+  transition: 1s all;
+  width: 75%;
+  background-color: #006634;
+  color: #FFF;
+  top: 10%;
+  left: -3%;
+  bottom: initial;
+  border-radius: 0 20px 20px 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.menu img.logo {
+  background-color: #006634;
+  width: 130px;
+  padding: 5px 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+.menu.hiddenMenu {
+  overflow: hidden;
+  left: -70%;
+
+}
+
+.menu .loadingText {
+  font-weight: bold;
+  color: #FFF;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-left: -45px;
+  border-radius: 5px;
+  -webkit-transform: rotate(-90deg);
+  transform-origin: right 17px;
+}
+
+.menu .arrow {
+  font-size: 18px;
+  cursor: pointer;
+  right: 4px;
+  top: 45%;
+  font-weight: bold;
+  position: absolute;
+  text-shadow: 0px 0px 7px #fff;
+}
+
+.menu nav ul {
+  list-style: none;
+  padding-right: 45px;
+  text-align: right;
+}
+
+.menu nav ul li {
+  padding: 5px 0;
+}
+
+
+.menu nav ul li:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.placar h2 {
+  text-align: center;
+}
+
+section {
+  padding-top: 15px;
+  border-bottom: 1px solid #e9e9e9;
+  text-align: center;
+  width: 100%;
+  background: #FFF;
+}
+
+section .visitanteInfo,
+section .mandanteInfo {
+  width: 31%;
+}
+
+section .escudo {
+  height: 52px;
+  width: 52px;
+}
+
+section .placar {
+  width: 31%;
+  font-size: 11px;
+  color: #252525;
+  vertical-align: top;
+  line-height: 100px;
+}
+
+section .placar strong {
+  font-size: 40px;
+  margin: 0 3px;
+}
+
+section span {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  color: #252525;
+  display: inline-block;
+  vertical-align: top;
+}
+
+section .time, 
+section .time-direito {
+  margin-right: 5px;
+  color: #252525;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+section .golsMandante {
+  text-align: right;
+  margin-right: 5px;
+}
+
+section .golsVisitante {
+  text-align: left;
+  margin-left: 5px;
+}
+
+section .golsMandante, section .golsVisitante {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 11px;
+  vertical-align: top;
+  width: 190px;
+  display: inline-block;
+  padding: 0;
+}
+
+section .gols {
+  padding-bottom: 15px;
+  position: relative;
+}
+
+section .gols .golsMandante div, section .gols .golsVisitante div {
+  text-overflow: ellipsis;
+}
+
+section .gols .golDescricao {
+  font-weight: normal;
+  font-size: 11px;
+  vertical-align: top;
+  display: inline-block;
+  padding: 0;
+}
+
+
+
+section a {
+  text-decoration: none;
+}
+
+.tipo-campeonato { 
+  font-size: 14px; 
+  color: #1f4014; 
+  margin-left: 10px; 
+}
+
+.tipo-campeonato a {
+  color:#696969; 
+  font-weight:bold;
+}
+
+.partidas {
+  width: 100%;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.classificacao {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  padding: 20px;
+}
+
+.classificacao thead {
+  font-weight: bold;
+}
+
+.classificacao tr {
+  background: #E7E7E7;
+}
+
+.classificacao thead tr, .classificacao tr:nth-child(even) {
+  background: #536C60;
+  color: #FFF;
+}
+
+.tabela {
+  background: white;
+}
+
+.tituloClassificacao{
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
