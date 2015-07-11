@@ -1,5 +1,17 @@
 var tabelaApp = angular.module('tabelaApp',['tabelaAppServices', 'tabelaAppTranslations']);
 
+
+
+document.addEventListener('deviceready', function () {
+  cordova.plugins.notification.local.schedule({
+    id: 10,
+    title: "Meeting in 15 minutes!",
+    text: "Jour fixe Produktionsbesprechung",
+    data: { meetingId:"#123FG8" }
+  });
+
+}, false);
+
 tabelaApp.controller('MainCtrl',['$scope','placarService','$timeout', '$translate', function($scope, placarService, $timeout, $translate) {
   updateCampeonato = null;
   $scope.tabelaData = null;
