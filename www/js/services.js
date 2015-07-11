@@ -1,4 +1,38 @@
-var tabelaAppServices = angular.module('tabelaAppServices', []);
+var tabelaAppServices = angular.module('tabelaAppServices', ['ngCordova']);
+
+
+
+tabelaAppServices.factory('notificationService',['$rootScope', '$filter', function($rootScope, $filter) {
+  var notificationModel = function() {
+    //em breve, lista de jogos que quero notificar...
+    var whitelist = [];
+  };
+
+  notificationModel.prototype.checkNotifications = function(currentData, newData, champ) {
+    var alarmTime = new Date();
+    alarmTime.setMinutes(alarmTime.getMinutes());
+    currentData.forEach(function(resultado, key) {
+      //procura pelo valor de ptn e compara com array antigo
+      if((resultado.ptn_mandante != newData[key].ptn_mandante) || (resultado.ptn_visitante != newData[key].ptn_visitante)) {
+
+        $cordovaLocalNotification.add({
+          id: "1234",
+          date: alarmTime,
+          message: resultado.mandante + " x " + resultado.visitante,
+          title: "GOL!!",
+          autoCancel: true,
+          sound: null
+        }).then(function () {
+          //console.log("The notification has been set");
+        });
+        $rootScope.$broadcast('scoresChanged', champ);
+      }
+    });
+  };
+
+  return notificationModel;
+}]);
+
 
 tabelaAppServices.factory('placarService',['$http', '$filter', function($http, $filter) {
   var placarModel = function() {
@@ -24,6 +58,13 @@ tabelaAppServices.factory('placarService',['$http', '$filter', function($http, $
     return temp;
   };
 
+
+  placarModel.getCampeonatos = function() {
+    return this.campeonatos;
+  };
+
+
+  //recebe um ID e retorna um campeonato
   placarModel.prototype.getPlacarTabelaContent = function(id) {
     var self=this;
     return $http.get("http://www.futebolinterior.com.br/gerados/placar_"+id+".json").then(
@@ -41,7 +82,7 @@ tabelaAppServices.factory('placarService',['$http', '$filter', function($http, $
 	        resultado.historico[gol].time = time;
           };
           resultado.historico = _.toArray(resultado.historico);
-        })
+        });
         self.tabela = response.data[0].tabela;
         _.each(response.data[0].classificacao, function(value, key, time) {
 	  time[key].pg = parseInt(time[key].pg);
@@ -54,8 +95,8 @@ tabelaAppServices.factory('placarService',['$http', '$filter', function($http, $
         console.log(e);
       }
     )};
-  
 
+    //retorna todos os campeonatos
     placarModel.prototype.getCampeonatos = function() {
       var self=this;
       return $http.get("http://www.futebolinterior.com.br/gerados/placares.json").then(

@@ -15,7 +15,8 @@
 	<script type="text/javascript" src="js/translation-table.js"></script>
 	<script type="text/javascript" src="js/banco.js"></script>
 </head>
-<body ng-app="tabelaApp">
+<!--ng-app="tabelaApp"-->
+<body id="body">
 	<div ng-controller="MainCtrl">
 		<select ng-model="currLang" ng-change="setLanguage()" ng-options="language.name for language in languages" ng-init="currLang = languages[0]"></select>
 		<span class="menu" ng-click="hiddenMenu = !hiddenMenu;" ng-class="{'hiddenMenu': hiddenMenu == true}">
@@ -91,5 +92,14 @@
 		</div>
 	</div>
 </div>
+	<script src="js/ng-cordova.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript">
+		document.addEventListener("deviceready", function() {
+			// retrieve the DOM element that had the ng-app attribute
+			var domElement = document.getElementById("body");
+			angular.bootstrap(domElement, ["tabelaApp"]);
+		}, false);
+	</script>
 </body>
 </html>

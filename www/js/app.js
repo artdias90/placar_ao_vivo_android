@@ -1,27 +1,24 @@
 var tabelaApp = angular.module('tabelaApp',['tabelaAppServices', 'tabelaAppTranslations']);
 
-
-
-document.addEventListener('deviceready', function () {
-  cordova.plugins.notification.local.schedule({
-    id: 10,
-    title: "Meeting in 15 minutes!",
-    text: "Jour fixe Produktionsbesprechung",
-    data: { meetingId:"#123FG8" }
-  });
-
-}, false);
-
-tabelaApp.controller('MainCtrl',['$scope','placarService','$timeout', '$translate', function($scope, placarService, $timeout, $translate) {
+tabelaApp.controller('MainCtrl',['$scope','$rootScope', 'placarService','$timeout', '$translate', '$interval', 'notificationService', function($scope, $rootScope, placarService, $timeout, $translate, $interval, notificationService) {
   updateCampeonato = null;
-  $scope.tabelaData = null;
   $translate.use('pt');
   
   var placarInstance = new placarService();
+  var notificationInstance = new notificationService();
+  var currentMatches = [];
   
   placarInstance.getCampeonatos().then(function() {
     $scope.campeonatos = placarInstance.campeonatos;
     $scope.diarios = placarInstance.getJogosDoDia();
+    startCampeonatos();
+  });
+
+
+  $rootScope.$on('scoresChanged', function(event, args) {
+    placarInstance.getPlacarTabelaContent(args).then(function() {
+      currentMatches[args]= placarInstance.tabela;
+    });
   });
 
   trackButton = function(id) {
@@ -37,26 +34,37 @@ tabelaApp.controller('MainCtrl',['$scope','placarService','$timeout', '$translat
   startApp = $timeout(function() {
     $scope.showJogosDoDia();
     $scope.hiddenMenu = true;
-  }, 2000);
 
+  }, 3000);
 
   $scope.showCampeonato = function(id) {
     $scope.showLoading = true;
     placarInstance.getPlacarTabelaContent(id).then(function() {
       $scope.tabelaData = placarInstance.tabela;
+      currentMatches[id]= placarInstance.tabela;
       $scope.showLoading = false;
       $scope.classificacaoData = placarInstance.classificacao;
     });
-
-    $interval.cancel(updateCampeonato);
-
-    updateCampeonato = $interval(function() {
-      placarInstance.getPlacarTabelaContent(id).then(function() {
-      $scope.tabelaData = placarInstance.tabela;
-      $scope.classicacaoData = placarInstance.classificacao;
-    });
-    }, 10000);
   };
+
+
+  function startCampeonatos() {
+    _.each(placarInstance.campeonatos, function(campeonato, key) {
+
+      //cria objeto com tabela atual para cada um campeonato.id
+      placarInstance.getPlacarTabelaContent(key).then(function() {
+        currentMatches[key]= placarInstance.tabela;
+      });
+
+      //compara com novo array a cada 10 segundos
+      updateCampeonato = $interval(function() {
+        placarInstance.getPlacarTabelaContent(key).then(function() {
+          notificationInstance.checkNotifications(currentMatches[key], placarInstance.tabela, key);
+        });
+      }, 10000);
+    });
+  };
+
 
   $scope.languages = [
     {
