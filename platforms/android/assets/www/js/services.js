@@ -2,32 +2,40 @@ var tabelaAppServices = angular.module('tabelaAppServices', ['ngCordova']);
 
 
 
-tabelaAppServices.factory('notificationService',['$rootScope', '$filter', function($rootScope, $filter) {
+tabelaAppServices.factory('notificationService',['$cordovaLocalNotification', '$filter', function($cordovaLocalNotification, $filter) {
   var notificationModel = function() {
-    //em breve, lista de jogos que quero notificar...
     var whitelist = [];
   };
 
-  notificationModel.prototype.checkNotifications = function(currentData, newData, champ) {
-    var alarmTime = new Date();
-    alarmTime.setMinutes(alarmTime.getMinutes());
-    currentData.forEach(function(resultado, key) {
-      //procura pelo valor de ptn e compara com array antigo
-      if((resultado.ptn_mandante != newData[key].ptn_mandante) || (resultado.ptn_visitante != newData[key].ptn_visitante)) {
-
-        $cordovaLocalNotification.add({
-          id: "1234",
-          date: alarmTime,
-          message: resultado.mandante + " x " + resultado.visitante,
-          title: "GOL!!",
-          autoCancel: true,
-          sound: null
-        }).then(function () {
-          //console.log("The notification has been set");
-        });
-        $rootScope.$broadcast('scoresChanged', champ);
-      }
+  notificationModel.prototype.sendTextNotification = function(title, text) {
+    $cordovaLocalNotification.add({
+      id: "1234",
+      date: new Date().getTime(),
+      title: title,
+      text: text,
+      icon: "../icon48.png",
+      autoCancel: true,
+      sound: null
+    }).then(function () {
     });
+  };
+
+  notificationModel.prototype.sendScoreNotification = function(partida) {
+    var now = new Date().getTime();
+    var _10SecondsFromNow = new Date(now + 10 * 1000);
+    $cordovaLocalNotification.add({
+      id: "1234",
+      date: _10SecondsFromNow,
+      title: "GOL!!",
+      icon: "../icon48.png",
+      text: partida.mandante + "x" + partida.visitante,
+      autoCancel: true,
+      sound: null
+    }).then(function () {
+      //console.log("The notification has been se
+    });
+
+
   };
 
   return notificationModel;
@@ -112,5 +120,6 @@ tabelaAppServices.factory('placarService',['$http', '$filter', function($http, $
           console.log(response);
         }
       )};
+
       return placarModel;
 }]);
