@@ -1,4 +1,4 @@
 - notificacao local
 - adicionar icones
 - nome do campeonato no 'jogos de hoje'
-- escolher seu time ou campeonato (v2)
+- escolher seu time (v2)

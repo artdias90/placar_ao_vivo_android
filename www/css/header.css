@@ -1,0 +1,29 @@
+#header {
+    width: 100%;
+    background-color: #006634;
+    color: #FFF;
+    padding: 20px 0;
+}
+
+#header .header-item {
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+}
+
+#header .header-item.middle {
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+
+#header .header-item i {
+    color: #FFF;
+    font-size: 32px;
+    text-align: center;
+}
+
+#header .header-item i.active {
+    text-shadow: 0 0 5px #FFF;
+}
+
+

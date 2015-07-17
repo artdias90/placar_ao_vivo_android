@@ -1,0 +1,156 @@
+#tabela h3 {
+    text-align: center;
+    border-bottom: 1px solid green;
+    padding: 0 10px 30px 60px;
+    line-height: 30px;
+}
+
+#tabela .fa-arrow-circle-left {
+    text-decoration: none;
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    color: #006634;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#tabela .placar h2 {
+    text-align: center;
+}
+
+#tabela section {
+    padding-top: 15px;
+    border-bottom: 1px solid #e9e9e9;
+    text-align: center;
+    width: 100%;
+    background: #FFF;
+}
+
+#tabela section .visitanteInfo,
+#tabela section .mandanteInfo {
+    width: 31%;
+}
+
+#tabela section .escudo {
+    height: 52px;
+    width: 52px;
+}
+
+#tabela section .placar {
+    width: 31%;
+    font-size: 11px;
+    color: #252525;
+    vertical-align: top;
+    line-height: 100px;
+}
+
+#tabela section .placar strong {
+    font-size: 40px;
+    margin: 0 3px;
+}
+
+#tabela section span {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    color: #252525;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#tabela section .time,
+#tabela section .time-direito {
+    margin-right: 5px;
+    color: #252525;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+#tabela section .golsMandante {
+    text-align: right;
+    margin-right: 5px;
+}
+
+#tabela section .golsVisitante {
+    text-align: left;
+    margin-left: 5px;
+}
+
+#tabela section .golsMandante, section .golsVisitante {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 11px;
+    vertical-align: top;
+    width: 190px;
+    display: inline-block;
+    padding: 0;
+}
+
+#tabela section .gols {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+#tabela section .gols .golsMandante div, section .gols .golsVisitante div {
+    text-overflow: ellipsis;
+}
+
+#tabela section .gols .golDescricao {
+    font-weight: normal;
+    font-size: 11px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0;
+}
+
+#tabela section a {
+    text-decoration: none;
+}
+
+#tabela .tipo-campeonato {
+    font-size: 14px;
+    color: #1f4014;
+    margin-left: 10px;
+}
+
+#tabela .tipo-campeonato a {
+    color:#696969;
+    font-weight:bold;
+}
+
+#tabela .partidas {
+    width: 100%;
+    overflow: hidden;
+}
+
+#tabela .classificacao {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    padding: 20px;
+}
+
+#tabela .classificacao thead {
+    font-weight: bold;
+}
+
+#tabela .classificacao tr {
+    background: #E7E7E7;
+}
+
+#tabela .classificacao thead tr,
+#tabela .classificacao tr:nth-child(even) {
+    background: #536C60;
+    color: #FFF;
+}
+
+#tabela .tabela {
+    background: white;
+}
+
+#tabela .tituloClassificacao {
+    margin-top: 5px;
+    margin-bottom: -10px;
+}

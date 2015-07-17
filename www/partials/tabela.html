@@ -1,0 +1,64 @@
+<div id="tabela">
+    <h3 translate="championships.{{campeonato.nome}}"></h3>
+    <a href="/" class="fa fa-arrow-circle-left"></a>
+    <div class="partidas" ng-if="tabelaData">
+        <section ng-repeat="placar in tabelaData" class="partida">
+            <span ng-if="placar.status == 'Agendado'" translate="match_scheduled" translate-values="{date: placar.data}"></span>
+            <span ng-if="placar.status == 'Parcial'" translate="match_progress"></span>
+            <span ng-if="placar.status == 'Finalizado'" translate="match_finished" translate-values="{date: placar.data}"></span>
+            <div ng-if="placar.rodada != ''" translate="round" translate-values="{round_number: placar.rodada}"></div>
+                    <span class="mandanteInfo">
+                        <img class="escudo" src="http://www.futebolinterior.com.br/Imagem/{{placar.id_escudom}}/52x52">
+                        <div class="time">{{placar.mandante}}</div>
+                    </span>
+                    <span class="placar">
+                        <strong>{{placar.ptn_mandante}}</strong>
+                        X
+                        <strong>{{placar.ptn_visitante}}</strong>
+                    </span>
+                    <span class="visitanteInfo">
+                        <img  class="escudo" src="http://www.futebolinterior.com.br/Imagem/{{placar.id_escudov}}/52x52">
+                        <div class="time-direito">{{placar.visitante}}</div>
+                    </span>
+            <div ng-if="placar.estadio" translate="stadium" translate-values="{stadium: placar.estadio}"></div>
+            <div ng-if="placar.cidade" translate="place" translate-values="{place: placar.cidade}"></div>
+            <div ng-if="placar.status!='Finalizado'" translate="time" translate-values="{time: placar.horario}"></div>
+            <div ng-if="placar.status!='Agendado'" class="gols">
+                        <span class="golsMandante">
+                          <div ng-repeat="gol in placar.historico | orderBy:'periodo':false" ng-if="gol.time=='m'">
+                              <strong>{{gol.autor}}</strong>
+                              <span class="golDescricao" translate="goal_description" translate-values="{goal_time: gol.minutos, goal_period: gol.periodo, goal_extra: gol.extra || ''}"></span>
+                          </div>
+                        </span>
+                <span class="separator"></span>
+                        <span class="golsVisitante">
+                          <div ng-repeat="gol in placar.historico | orderBy:'periodo':false" ng-if="gol.time=='v'">
+                              <strong>{{gol.autor}}</strong>
+                              <span class="golDescricao" translate="goal_description" translate-values="{goal_time: gol.minutos, goal_period: gol.periodo, goal_extra: gol.extra || ''}"></span>
+                          </div>
+                        </span>
+            </div>
+        </section>
+    </div>
+    <div class="tabela" ng-if="classificacaoData && classificacaoData != ''">
+        <h2 class="tituloClassificacao" translate="standings.title"></h2>
+        <table cellspacing="0" class="classificacao" >
+            <thead>
+            <td class="posicao">P</td>
+            <td translate="standings.team" class="nome"></td>
+            <td translate="standings.points" class="pontos">PG</td>
+            <td translate="standings.matches" class="jogos">JG</td>
+            <td translate="standings.victories" class="vitorias">VI</td>
+            <td translate="standings.goal_overall" class="saldo">SG</td>
+            </thead>
+            <tr ng-repeat="classificado in classificacaoData | orderBy:'pg':true">
+                <td>{{$index+1}}</td>
+                <td>{{classificado.name}}</td>
+                <td>{{classificado.pg}}</td>
+                <td>{{classificado.jg}}</td>
+                <td>{{classificado.vi}}</td>
+                <td>{{classificado.sg}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

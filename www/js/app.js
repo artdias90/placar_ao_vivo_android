@@ -1,95 +1,98 @@
-var tabelaApp = angular.module('tabelaApp',['tabelaAppServices', 'tabelaAppTranslations']);
+var tabelaApp = angular.module('tabelaApp',['tabelaAppServices', 'tabelaAppTranslations', 'ui.router']);
 
-tabelaApp.controller('MainCtrl',['$scope','$rootScope', 'placarService','$timeout', '$translate', '$interval', 'notificationService', function($scope, $rootScope, placarService, $timeout, $translate, $interval, notificationService) {
-  updateCampeonato = null;
-  $translate.use('pt');
+tabelaApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
+  function($stateProvider, $urlRouterProvider, $locationProvider) {
+    $stateProvider
+        .state('campeonatos', {
+          url: '/',
+          templateUrl: '/partials/campeonatos.html',
+          controller: 'CampeonatosCtrl'
+        })
+        .state('tabela', {
+          url: '/campeonatos/:campeonatoId',
+          templateUrl: '/partials/tabela.html',
+          params: {
+            campeonatoId: true,
+            jogosDia: false
+          },
+          controller: 'TabelaCtrl'
+        })
+        .state('time', {
+          url: '/meu-time',
+          templateUrl: '/partials/time.html',
+          controller: 'TimeCtrl'
+        })
+        .state('config', {
+          url: '/config',
+          templateUrl: '/partials/config.html',
+          controller: 'ConfigCtrl'
+        });
 
-  var placarInstance = new placarService();
-  var lastTabelas = [];
-  var lastChamp = [];
-  var lastChampMatches = [];
-  var whiteList = [];
-  var notificationInstance = new notificationService();
+    $urlRouterProvider.otherwise("/");
+
+    // set html5 mode
+    $locationProvider.html5Mode({
+      enabled: true,
+      hashPrefix: '!',
+      requireBase: false
+    });
+
+  }]);
+
+tabelaApp.run(['placarService', function(placarService) {
+  placarInstance = new placarService();
+}]);
+
+
+tabelaApp.controller('HeaderCtrl',['$scope','$rootScope', 'placarService','$timeout', '$translate', '$interval', 'notificationService', function($scope, $rootScope, placarService, $timeout, $translate, $interval, notificationService) {
+
+}]);
+
+tabelaApp.controller('CampeonatosCtrl',['$scope','$rootScope', 'placarService','$timeout', '$translate', '$interval', 'notificationService', function($scope, $rootScope, placarService, $timeout, $translate, $interval, notificationService) {
+
+  //set active menu
+  $rootScope.activeTab = 'campeonatos';
 
   placarInstance.getCampeonatos().then(function() {
-    $scope.campeonatos = placarInstance.campeonatos;
-    $scope.diarios = placarInstance.getJogosDoDia();
-    startCampeonatos();
+    $scope.campeonatos = _.toArray(placarInstance.campeonatos);
   });
 
-
-  $rootScope.$on('scoresChanged', function(event, args) {
-    //restarta tudo
-
-  });
 
   trackButton = function(id) {
     _gaq.push(['_trackEvent', id, 'clicked']);
   };
 
-  $scope.showJogosDoDia = function() {
-    $scope.showLoading = true;
-    $scope.onCampeonato = false;
-    $scope.tabelaData = $scope.diarios;
-    $scope.showLoading = false;
-    $scope.classificacaoData = null;
-  };
-
-  startApp = $timeout(function() {
-    $scope.showJogosDoDia();
-    $scope.hiddenMenu = true;
-
-  }, 3000);
-
-  $scope.showCampeonato = function(id, nome) {
-    $scope.currentCampeonato = id;
-    $scope.currentCampeonatoName = nome;
-    $scope.onCampeonato = true;
-    $scope.tabelaData = lastChampMatches[id];
-    $scope.classificacaoData = lastTabelas[id];
-  };
+}]);
 
 
-  function startCampeonatos() {
-    _.each(placarInstance.campeonatos, function(campeonato, key) {
-      lastChamp[campeonato.id] = campeonato;
+tabelaApp.controller('TabelaCtrl',['$scope', '$rootScope', 'placarService', '$stateParams', function($scope, $rootScope, placarService, $stateParams) {
+  //set active menu
+  $rootScope.activeTab = 'time';
 
-      //get games
-      placarInstance.getPlacarTabelaContent(campeonato.id).then(function() {
-        lastChampMatches[campeonato.id] = placarInstance.tabela;
-        lastTabelas[campeonato.id] = placarInstance.classificacao;
-      });
+  $scope.showLoading = true;
+  $scope.currentCampeonato = $stateParams;
+  $scope.onCampeonato = true;
+
+  if($stateParams.jogosDia) {
+    $scope.tabelaData = placarInstance.getJogosDoDia();
+  } else {
+    $scope.campeonato = placarInstance.campeonatos[$stateParams.campeonatoId];
+    placarInstance.getPlacarTabelaContent($stateParams.campeonatoId).then(function() {
+      $scope.showLoading = false;
+      $scope.tabelaData = placarInstance.tabela;
     });
-    checkCampeonatos();
   }
 
-  $scope.signUpNotification = function() {
-    whiteList.push($scope.currentCampeonato);
-    notificationInstance.sendTextNotification($scope.currentCampeonatoName, "notificações ativadas");
-    var initializing = true;
-    //register listeners on scores
-    _.each(lastChampMatches[$scope.currentCampeonato], function(partida, key) {
-      $scope.$watchGroup([partida.ptn_mandante,partida.ptn_visitante], function(newValues, oldValues, scope) {
-        if (initializing) {
-          $timeout(function() { initializing = false; });
-        } else {
-          notificationInstance.sendScoreNotification(partida);
-        }
-      });
-    });
-  };
+}]);
 
+tabelaApp.controller('TimeCtrl',['$scope','$rootScope', 'placarService','$timeout', '$translate', '$interval', function($scope, $rootScope, placarService, $timeout, $translate, $interval) {
+//set active menu
+  $rootScope.activeTab = 'time';
+}]);
 
-  function checkCampeonatos() {
-    updateCampeonato = $interval(function () {
-      _.each(whiteList, function(campeonatoId, key) {
-        placarInstance.getPlacarTabelaContent(campeonatoId).then(function() {
-          lastChampMatches[campeonatoId] = placarInstance.tabela;
-        });
-      });
-    }, 10000);
-  }
-
+tabelaApp.controller('ConfigCtrl',['$scope','$rootScope', 'placarService','$timeout', '$translate', '$interval', function($scope, $rootScope, placarService, $timeout, $translate, $interval) {
+  //set active menu
+  $rootScope.activeTab = 'config';
 
   $scope.languages = [
     {
@@ -110,13 +113,13 @@ tabelaApp.controller('MainCtrl',['$scope','$rootScope', 'placarService','$timeou
     }
   ];
 
-  $scope.currLang = "asdas";
+  if(!$rootScope.currLang) {
+    $rootScope.currLang = $scope.languages[0];
+  }
 
   $scope.setLanguage = function() {
     $translate.use($scope.currLang.slug);
+    $rootScope.currLang = $scope.currLang;
   };
-
-  //novo campeonato feito dos jogos do dia
-
 
 }]);

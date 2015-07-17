@@ -1,98 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" ng-csp>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title></title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/tabela.css">
+	<link rel="stylesheet" type="text/css" href="css/time.css">
+	<link rel="stylesheet" type="text/css" href="css/campeonatos.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/angular-translate.min.js"></script>
 	<script type="text/javascript" src="js/underscore-min.js"></script>
 	<script type="text/javascript" src="js/popup.js"></script>
+	<script type="text/javascript" src="js/angular-ui-router.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/services.js"></script>
 	<script type="text/javascript" src="js/translation-table.js"></script>
 	<script type="text/javascript" src="js/banco.js"></script>
 </head>
 <!--ng-app="tabelaApp"-->
-<body id="body">
-	<div ng-controller="MainCtrl">
-		<select ng-model="currLang" ng-change="setLanguage()" ng-options="language.name for language in languages" ng-init="currLang = languages[0]"></select>
-		<button ng-if="onCampeonato == true" ng-click="signUpNotification()">NOTIFICAR ESTE CAMPEONATO</button>
-		<span class="menu" ng-click="hiddenMenu = !hiddenMenu;" ng-class="{'hiddenMenu': hiddenMenu == true}">
-			<nav>
-				<ul>
-					<li class="campeonato" ng-click="showJogosDoDia();" translate="championships.diarios"></li>
-					<li ng-model="campeonatoChosen" class="campeonato" ng-repeat="campeonato in campeonatos" ng-click="showCampeonato(campeonato.id, campeonato.nome);" translate="championships.{{campeonato.nome}}"></li>
-				</ul>
-				<div ng-if="!campeonatos" translate="no_championship"></div>
-			</nav>
-			<span class="arrow">{{hiddenMenu? '&gt;' : '&lt;'}}</span>
-			<div class="loadingText" ng-if="showLoading" translate="loading"></div>
-		</span>
-		<div class="partidas" ng-if="tabelaData">
-			<section ng-repeat="placar in tabelaData" class="partida">
-				<span ng-if="placar.status == 'Agendado'" translate="match_scheduled" translate-values="{date: placar.data}"></span>
-				<span ng-if="placar.status == 'Parcial'" translate="match_progress"></span>
-				<span ng-if="placar.status == 'Finalizado'" translate="match_finished" translate-values="{date: placar.data}"></span>
-				<div ng-if="placar.rodada != ''" translate="round" translate-values="{round_number: placar.rodada}"></div>
-				<span class="mandanteInfo">
-					<img class="escudo" src="http://www.futebolinterior.com.br/Imagem/{{placar.id_escudom}}/52x52">
-					<div class="time">{{placar.mandante}}</div>
-				</span>
-				<span class="placar">
-					<strong>{{placar.ptn_mandante}}</strong>
-					X
-					<strong>{{placar.ptn_visitante}}</strong>
-				</span>
-				<span class="visitanteInfo">
-					<img  class="escudo" src="http://www.futebolinterior.com.br/Imagem/{{placar.id_escudov}}/52x52">
-					<div class="time-direito">{{placar.visitante}}</div>
-				</span>
-				<div ng-if="placar.estadio" translate="stadium" translate-values="{stadium: placar.estadio}"></div>
-				<div ng-if="placar.cidade" translate="place" translate-values="{place: placar.cidade}"></div>
-				<div ng-if="placar.status!='Finalizado'" translate="time" translate-values="{time: placar.horario}"></div>
-				<div ng-if="placar.status!='Agendado'" class="gols">
-					<span class="golsMandante">
-					  <div ng-repeat="gol in placar.historico | orderBy:'periodo':false" ng-if="gol.time=='m'">
-						  <strong>{{gol.autor}}</strong>
-						  <span class="golDescricao" translate="goal_description" translate-values="{goal_time: gol.minutos, goal_period: gol.periodo, goal_extra: gol.extra || ''}"></span>
-					  </div>
-					</span>
-						<span class="separator"></span>
-					<span class="golsVisitante">
-					  <div ng-repeat="gol in placar.historico | orderBy:'periodo':false" ng-if="gol.time=='v'">
-						  <strong>{{gol.autor}}</strong>
-						  <span class="golDescricao" translate="goal_description" translate-values="{goal_time: gol.minutos, goal_period: gol.periodo, goal_extra: gol.extra || ''}"></span>
-					  </div>
-					</span>
-				</div>
-			</section>
-		</div>
-		<div class="tabela" ng-if="classificacaoData && classificacaoData != ''">
-			<center><h2 class="tituloClassificacao" translate="standings.title"></h2></center>
-			<table cellspacing="0" class="classificacao" >
-				<thead>
-				<td class="posicao">P</td>
-				<td translate="standings.team" class="nome"></td>
-				<td translate="standings.points" class="pontos">PG</td>
-				<td translate="standings.matches" class="jogos">JG</td>
-				<td translate="standings.victories" class="vitorias">VI</td>
-				<td translate="standings.goal_overall" class="saldo">SG</td>
-				</thead>
-				<tr ng-repeat="classificado in classificacaoData | orderBy:'pg':true">
-					<td>{{$index+1}}</td>
-					<td>{{classificado.name}}</td>
-					<td>{{classificado.pg}}</td>
-					<td>{{classificado.jg}}</td>
-					<td>{{classificado.vi}}</td>
-					<td>{{classificado.sg}}</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-</div>
+<body id="body" ng-app="tabelaApp">
+	<section id="header" ng-controller="HeaderCtrl" ng-include="'partials/header.html'"></section>
+	<div ui-view></div>
+	<!--
 	<script src="js/ng-cordova.min.js"></script>
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript">
@@ -102,6 +35,6 @@
 			angular.bootstrap(domElement, ["tabelaApp"]);
 		}, false);
 	</script>
-
+-->
 </body>
 </html>
