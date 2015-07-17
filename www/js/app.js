@@ -30,13 +30,6 @@ tabelaApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 
     $urlRouterProvider.otherwise("/");
 
-    // set html5 mode
-    $locationProvider.html5Mode({
-      enabled: true,
-      hashPrefix: '!',
-      requireBase: false
-    });
-
   }]);
 
 tabelaApp.run(['placarService', function(placarService) {
