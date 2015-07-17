@@ -5,12 +5,12 @@ tabelaApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
     $stateProvider
         .state('campeonatos', {
           url: '/',
-          templateUrl: '/partials/campeonatos.html',
+          templateUrl: 'partials/campeonatos.html',
           controller: 'CampeonatosCtrl'
         })
         .state('tabela', {
           url: '/campeonatos/:campeonatoId',
-          templateUrl: '/partials/tabela.html',
+          templateUrl: 'partials/tabela.html',
           params: {
             campeonatoId: true,
             jogosDia: false
@@ -19,12 +19,12 @@ tabelaApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         })
         .state('time', {
           url: '/meu-time',
-          templateUrl: '/partials/time.html',
+          templateUrl: 'partials/time.html',
           controller: 'TimeCtrl'
         })
         .state('config', {
           url: '/config',
-          templateUrl: '/partials/config.html',
+          templateUrl: 'partials/config.html',
           controller: 'ConfigCtrl'
         });
 

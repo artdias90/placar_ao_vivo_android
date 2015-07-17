@@ -1,0 +1,20 @@
+<div id="campeonatos">
+    <div class="loadingIcon" ng-if="showLoading"></div>
+    <span class="campeonatos-menu">
+        <h3>Selecione um campeonato:</h3>
+        <div class="campeonatoSearch">
+            <input type="text" ng-model="searchName" placeholder="Pesquise um campeonato...">
+            <i class="fa fa-search"></i>
+        </div>
+        <ul>
+            <li class="campeonato" ui-sref="tabela({jogosDia: true})" translate="championships.diarios"></li>
+            <li ng-model="campeonatoChosen"
+                class="campeonato"
+                ng-repeat="campeonato in campeonatos | filter: searchName"
+                ui-sref="tabela({campeonatoId: campeonato.id})"
+                translate="championships.{{campeonato.nome}}"></li>
+        </ul>
+        <div ng-if="!campeonatos" translate="no_championship"></div>
+    </span>
+
+</div>

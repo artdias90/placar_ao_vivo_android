@@ -1,0 +1,39 @@
+#campeonatos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#campeonatos .campeonatoSearch {
+    position: relative;
+    margin: 0 auto;
+    max-width: 210px;
+}
+
+#campeonatos .campeonatoSearch input {
+    height: 30px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+#campeonatos .campeonatoSearch .fa-search {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+#campeonatos ul li {
+    padding: 15px 10px;
+    font-size: 16px;
+    border-top: 1px solid #CCC;
+}
+
+#campeonatos h3 {
+    text-align: center;
+}
+
+#campeonatos ul li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}

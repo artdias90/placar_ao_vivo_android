@@ -1,8 +1,8 @@
-var tabelaAppServices = angular.module('tabelaAppServices', ['ngCordova']);
+var tabelaAppServices = angular.module('tabelaAppServices', []);
 
 
 
-tabelaAppServices.factory('notificationService',['$cordovaLocalNotification', '$filter', function($cordovaLocalNotification, $filter) {
+tabelaAppServices.factory('notificationService',['$filter', function($filter) {
   var notificationModel = function() {
     var whitelist = [];
   };
@@ -32,7 +32,6 @@ tabelaAppServices.factory('notificationService',['$cordovaLocalNotification', '$
       autoCancel: true,
       sound: null
     }).then(function () {
-      //console.log("The notification has been se
     });
 
 
@@ -47,6 +46,7 @@ tabelaAppServices.factory('placarService',['$http', '$filter', function($http, $
     var tabela = [];
     var campeonatos = [];
     var classificacao = [];
+    var campeonatoUnico = [];
   };
 
   placarModel.prototype.getJogosDoDia = function() {
@@ -120,6 +120,7 @@ tabelaAppServices.factory('placarService',['$http', '$filter', function($http, $
           console.log(response);
         }
       )};
+
 
       return placarModel;
 }]);

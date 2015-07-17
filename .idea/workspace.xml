@@ -2,32 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="991c840a-8371-4741-bb62-d8701880c705" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/campeonatos.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/partials/campeonatos.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/partials/config.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/header.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/partials/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/tabela.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/partials/tabela.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/time.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/partials/time.html" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\OpenSans-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\OpenSans-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\OpenSans-ExtraBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\OpenSans-ExtraBoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\OpenSans-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\OpenSans-Light.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\OpenSans-LightItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\OpenSans-Semibold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\OpenSans-SemiboldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\www\css\style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/logo.png" afterPath="$PROJECT_DIR$/www/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/FALTA.txt" afterPath="$PROJECT_DIR$/www/FALTA.txt" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\OpenSans-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\OpenSans-BoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\OpenSans-ExtraBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\OpenSans-ExtraBoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\OpenSans-Italic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\OpenSans-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\OpenSans-LightItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\OpenSans-Semibold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\OpenSans-SemiboldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\placar_ao_vivo_android\platforms\android\assets\www\css\style.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/img/logo.png" afterPath="$PROJECT_DIR$/platforms/android/assets/www/img/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/FALTA.txt" afterPath="$PROJECT_DIR$/platforms/android/assets/www/FALTA.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services.js" afterPath="$PROJECT_DIR$/www/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/styles.css" afterPath="$PROJECT_DIR$/www/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/translation-table.js" afterPath="$PROJECT_DIR$/www/js/translation-table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/services.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/styles.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/translation-table.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/translation-table.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="placar_ao_vivo_android.iws" />
@@ -52,7 +45,38 @@
     <favorites_list name="placar_ao_vivo_android" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="731">
+              <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.46363637" vertical-offset="0" max-vertical-offset="2227">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/partials/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
+              <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,13 +93,13 @@
         <option value="$PROJECT_DIR$/www/css/styles.css" />
         <option value="$PROJECT_DIR$/www/css/header.css" />
         <option value="$PROJECT_DIR$/www/css/time.css" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/partials/time.html" />
         <option value="$PROJECT_DIR$/www/partials/tabela.html" />
         <option value="$PROJECT_DIR$/www/partials/campeonatos.html" />
-        <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/css/tabela.css" />
         <option value="$PROJECT_DIR$/www/js/translation-table.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/app.js" />
       </list>
     </option>
   </component>
@@ -144,42 +168,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placar_ao_vivo_android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placar_ao_vivo_android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placar_ao_vivo_android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="placar_ao_vivo_android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -188,7 +176,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../trendu-web" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="tra&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/app.js&#10;camp&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/campeonatos.html&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/index.html&#10;head&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/header.css&#10;serv&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/services.js&#10;cam&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/campeonatos.css&#10;st&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/styles.css&#10;tran&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;styl&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/style.css&#10;tr&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/index.html&#10;notif&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/notificacao.js" />
+    <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/header.html&#10;tra&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/app.js&#10;camp&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/campeonatos.html&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/index.html&#10;head&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/header.css&#10;serv&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/services.js&#10;cam&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/campeonatos.css&#10;st&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/styles.css&#10;tran&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;styl&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/style.css&#10;tr&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/index.html&#10;notif&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/notificacao.js" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -280,7 +268,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1096" height="1936" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268921" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996973" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -293,7 +281,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25586355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2519305" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2519305" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -531,14 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/partials/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07653348" vertical-offset="0" max-vertical-offset="1777">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/partials/config.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
@@ -619,14 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33471075" vertical-offset="853" max-vertical-offset="2227">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/partials/campeonatos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1866554" vertical-offset="0" max-vertical-offset="1184">
@@ -637,8 +609,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11486486" vertical-offset="0" max-vertical-offset="1184">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="57" />
+        <state vertical-scroll-proportion="-19.615385" vertical-offset="0" max-vertical-offset="731">
+          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/partials/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46363637" vertical-offset="0" max-vertical-offset="2227">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="31" />
           <folding />
         </state>
       </provider>
