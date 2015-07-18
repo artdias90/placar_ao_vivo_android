@@ -78,7 +78,8 @@
     margin-left: 5px;
 }
 
-#tabela section .golsMandante, section .golsVisitante {
+#tabela section .golsMandante,
+#tabela section .golsVisitante {
     margin-top: 20px;
     font-weight: normal;
     font-size: 11px;
@@ -93,7 +94,8 @@
     position: relative;
 }
 
-#tabela section .gols .golsMandante div, section .gols .golsVisitante div {
+#tabela section .gols .golsMandante div,
+#tabela section .gols .golsVisitante div {
     text-overflow: ellipsis;
 }
 

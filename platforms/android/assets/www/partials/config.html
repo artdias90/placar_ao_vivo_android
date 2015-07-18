@@ -1,3 +1,5 @@
 <div id="configuracoes">
-    <select ng-model="currLang" ng-change="setLanguage()" ng-options="language.name for language in languages" ng-init="currLang = $root.currLang"></select>
+    <h3 translate="config.language_select"></h3>
+    <select ng-model="currLang" ng-change="setLanguage($event)" ng-options="language.name for language in languages track by language.slug"></select>
+    <h3 translate="config.rate_link"></h3>
 </div>

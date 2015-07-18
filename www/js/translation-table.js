@@ -24,6 +24,7 @@
                 Copa_América___Única: 'Copa América',
                 Copa_do_Mundo___Feminina: 'Copa do Mundo Feminina',
                 Copa_do_Nordeste: 'Copa do Nordeste',
+                Copa_Paulista: 'Copa Paulista',
                 Copa_São_Paulo_de_Júnior: 'Copa São Paulo de Futebol Júnior',
                 Copa_Verde: 'Copa Verde',
                 Copas_Europeias: 'Copas Euroéias',
@@ -61,6 +62,7 @@
                 Tocantinense: 'Campeonato Tocantinense'
             },
             time_info: 'Em breve, você poderá ver notícias do seu time aqui!',
+            escolher_campeonato: 'Selecione um campeonato:',
             no_championship: 'Nenhum Campeonato no momento.',
             loading: 'Carregando...',
             match_scheduled: ' Agendado para {{date}}',
@@ -78,6 +80,10 @@
                 matches: 'JG',
                 victories: 'VI',
                 goal_overall: 'SG'
+            },
+            config: {
+                language_select: 'Alterar idioma:',
+                rate_link: 'Deixe o seu feedback no Google Play!'
             }
         })
             .translations('en', {
@@ -104,6 +110,7 @@
                     Copa_do_Nordeste: 'Brazil - Copa do Nordeste',
                     Copa_América___Única: 'Brazil - Copa América',
                     Copa_do_Mundo___Feminina: 'Brazil - Copa do Mundo Feminina',
+                    Copa_Paulista: 'Brazil - Copa Paulista',
                     Copa_São_Paulo_de_Júnior: 'Brazil - Copa São Paulo de Futebol Júnior',
                     Copa_Verde: 'Brazil - Copa Verde',
                     Copas_Europeias: 'European Cup',
@@ -141,6 +148,7 @@
                     Tocantinense: 'Brazil - Campeonato Tocantinense'
                 },
                 time_info: 'Soon you can see your favorite team here!',
+                escolher_campeonato: 'Choose a championship:',
                 no_championship: 'No Championship at the moment',
                 loading: 'Loading...',
                 match_scheduled: 'Scheduled to {{date}}',
@@ -158,6 +166,10 @@
                     matches: 'M',
                     victories: 'W',
                     goal_overall: 'G'
+                },
+                config: {
+                    language_select: 'Change Language:',
+                    rate_link: 'Rate us on Google Play!'
                 }
             })
             .translations('de', {
@@ -184,6 +196,7 @@
                     Copa_do_Mundo___Feminina: 'Brasilien - Copa do Mundo Feminina',
                     Copa_do_Brasil: 'Brasilien - Copa do Brasil',
                     Copa_do_Nordeste: 'Brasilien - Copa do Nordeste',
+                    Copa_Paulista: 'Brasilien - Copa Paulista',
                     Copa_São_Paulo_de_Júnior: 'Brasilien - Copa São Paulo de Futebol Júnior',
                     Copa_Verde: 'Brasilien - Copa Verde',
                     Copas_Europeias: 'Europaniche Tour',
@@ -221,6 +234,7 @@
                     Tocantinense: 'Brasilien - Campeonato Tocantinense'
                 },
                 time_info: 'Bald können Sie Nachrichten von Ihrem Team hier sehen!',
+                escolher_campeonato: 'Wählen Sie eine Meisterschaft:',
                 no_championship: 'Zur Zeit keine Meisterschaft gefunden.',
                 loading: 'laden...',
                 match_scheduled: 'am {{date}}',
@@ -238,6 +252,10 @@
                     matches: 'Sp',
                     victories: 'Si',
                     goal_overall: 'T'
+                },
+                config: {
+                    language_select: 'Sprache Ändern:',
+                    rate_link: 'Bewerten Sie uns auf Google Play!'
                 }
             })
             .translations('es', {
@@ -264,6 +282,7 @@
                     Copa_América___Única: 'Brasil - Copa América',
                     Copa_do_Mundo___Feminina: 'Brasil - Copa do Mundo Feminina',
                     Copa_do_Nordeste: 'Brasil - Copa do Nordeste',
+                    Copa_Paulista: 'Brasil - Copa Paulista',
                     Copa_São_Paulo_de_Júnior: 'Brasil - Copa São Paulo de Futebol Júnior',
                     Copa_Verde: 'Brasil - Copa Verde',
                     Copas_Europeias: 'Copas Europeias',
@@ -301,6 +320,7 @@
                     Tocantinense: 'Brasil - Campeonato Tocantinense'
                 },
                 time_info: 'Pronto, usted puede ver las noticias de su equipo de aquí!',
+                escolher_campeonato: 'Seleccionar un campeonato:',
                 no_championship: 'No campeonato en este momento.',
                 loading: 'Cargando...',
                 match_scheduled: 'Agendado para {{date}}',
@@ -318,6 +338,10 @@
                     matches: 'JG',
                     victories: 'VI',
                     goal_overall: 'SG'
+                },
+                config: {
+                    language_select: 'Cambiar Idioma:',
+                    rate_link: 'Bewerten Sie uns auf Google Play!'
                 }
             })
             .registerAvailableLanguageKeys(['en', 'de', 'pt', 'es'], {

@@ -1,6 +1,6 @@
 <div id="tabela">
     <h3 translate="championships.{{campeonato.nome}}"></h3>
-    <a href="/" class="fa fa-arrow-circle-left"></a>
+    <a ui-sref="campeonatos" class="fa fa-arrow-circle-left"></a>
     <div class="partidas" ng-if="tabelaData">
         <section ng-repeat="placar in tabelaData" class="partida">
             <span ng-if="placar.status == 'Agendado'" translate="match_scheduled" translate-values="{date: placar.data}"></span>

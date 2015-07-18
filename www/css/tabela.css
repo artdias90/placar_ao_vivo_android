@@ -69,23 +69,24 @@
 }
 
 #tabela section .golsMandante {
-    text-align: right;
-    margin-right: 5px;
-}
-
-#tabela section .golsVisitante {
     text-align: left;
     margin-left: 5px;
 }
 
-#tabela section .golsMandante, section .golsVisitante {
+#tabela section .golsVisitante {
+    text-align: right;
+    margin-right: 5px;
+}
+
+#tabela section .golsMandante,
+#tabela section .golsVisitante {
     margin-top: 20px;
     font-weight: normal;
     font-size: 11px;
     vertical-align: top;
-    width: 190px;
     display: inline-block;
     padding: 0;
+    width: 49%;
 }
 
 #tabela section .gols {
@@ -93,7 +94,8 @@
     position: relative;
 }
 
-#tabela section .gols .golsMandante div, section .gols .golsVisitante div {
+#tabela section .gols .golsMandante div,
+#tabela section .gols .golsVisitante div {
     text-overflow: ellipsis;
 }
 
@@ -153,4 +155,13 @@
 #tabela .tituloClassificacao {
     margin-top: 5px;
     margin-bottom: -10px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #tabela section .golsMandante,
+    #tabela section .golsVisitante {
+        max-width: 150px;
+    }
 }

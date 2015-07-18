@@ -32,8 +32,9 @@ tabelaApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 
   }]);
 
-tabelaApp.run(['placarService', function(placarService) {
+tabelaApp.run(['placarService', '$translate', function(placarService, $translate) {
   placarInstance = new placarService();
+  $translate.use('pt');
 }]);
 
 
@@ -78,7 +79,7 @@ tabelaApp.controller('TabelaCtrl',['$scope', '$rootScope', 'placarService', '$st
 
 }]);
 
-tabelaApp.controller('TimeCtrl',['$scope','$rootScope', 'placarService','$timeout', '$translate', '$interval', function($scope, $rootScope, placarService, $timeout, $translate, $interval) {
+tabelaApp.controller('TimeCtrl',['$scope','$rootScope', 'placarService','$timeout', '$interval', function($scope, $rootScope, placarService, $timeout, $interval) {
 //set active menu
   $rootScope.activeTab = 'time';
 }]);
@@ -106,13 +107,15 @@ tabelaApp.controller('ConfigCtrl',['$scope','$rootScope', 'placarService','$time
     }
   ];
 
-  if(!$rootScope.currLang) {
-    $rootScope.currLang = $scope.languages[0];
+  if($rootScope.currentLanguage) {
+    $scope.currLang = $rootScope.currentLanguage;
+  } else {
+    $scope.currLang = $scope.languages[0];
   }
 
   $scope.setLanguage = function() {
+    $rootScope.currentLanguage = $scope.currLang;
     $translate.use($scope.currLang.slug);
-    $rootScope.currLang = $scope.currLang;
   };
 
 }]);

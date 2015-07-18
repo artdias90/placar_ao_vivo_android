@@ -37,3 +37,9 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+@media screen and (max-width: 767px) {
+    #campeonatos .campeonatoSearch {
+        max-width: 90%;
+    }
+}
