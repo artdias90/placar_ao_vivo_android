@@ -30,6 +30,15 @@ tabelaApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 
     $urlRouterProvider.otherwise("/");
 
+    /** REMOVER QUANDO FOR CRIAR APK
+    $locationProvider.html5Mode({
+      enabled: true,
+      hashPrefix: '!',
+      requireBase: false
+     });
+
+     **/
+
   }]);
 
 tabelaApp.run(['placarService', '$translate', function(placarService, $translate) {
@@ -46,8 +55,9 @@ tabelaApp.controller('CampeonatosCtrl',['$scope','$rootScope', 'placarService','
 
   //set active menu
   $rootScope.activeTab = 'campeonatos';
-
+  $scope.showLoading = true;
   placarInstance.getCampeonatos().then(function() {
+    $scope.showLoading = false;
     $scope.campeonatos = _.toArray(placarInstance.campeonatos);
   });
 
@@ -62,16 +72,19 @@ tabelaApp.controller('CampeonatosCtrl',['$scope','$rootScope', 'placarService','
 tabelaApp.controller('TabelaCtrl',['$scope', '$rootScope', 'placarService', '$stateParams', function($scope, $rootScope, placarService, $stateParams) {
   //set active menu
   $rootScope.activeTab = 'time';
-
-  $scope.showLoading = true;
   $scope.currentCampeonato = $stateParams;
   $scope.onCampeonato = true;
-
+  $scope.showLoading = true;
   if($stateParams.jogosDia) {
     $scope.tabelaData = placarInstance.getJogosDoDia();
+    $scope.campeonato = {
+      nome: 'diarios'
+    };
+    $scope.showLoading = false;
   } else {
     $scope.campeonato = placarInstance.campeonatos[$stateParams.campeonatoId];
     placarInstance.getPlacarTabelaContent($stateParams.campeonatoId).then(function() {
+      $scope.showLoading = false;
       $scope.showLoading = false;
       $scope.tabelaData = placarInstance.tabela;
     });

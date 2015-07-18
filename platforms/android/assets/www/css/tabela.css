@@ -69,13 +69,13 @@
 }
 
 #tabela section .golsMandante {
-    text-align: right;
-    margin-right: 5px;
+    text-align: left;
+    margin-left: 5px;
 }
 
 #tabela section .golsVisitante {
-    text-align: left;
-    margin-left: 5px;
+    text-align: right;
+    margin-right: 5px;
 }
 
 #tabela section .golsMandante,
@@ -84,9 +84,9 @@
     font-weight: normal;
     font-size: 11px;
     vertical-align: top;
-    width: 190px;
     display: inline-block;
     padding: 0;
+    width: 49%;
 }
 
 #tabela section .gols {
@@ -155,4 +155,13 @@
 #tabela .tituloClassificacao {
     margin-top: 5px;
     margin-bottom: -10px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #tabela section .golsMandante,
+    #tabela section .golsVisitante {
+        max-width: 150px;
+    }
 }

@@ -77,6 +77,9 @@ tabelaApp.controller('TabelaCtrl',['$scope', '$rootScope', 'placarService', '$st
   $scope.showLoading = true;
   if($stateParams.jogosDia) {
     $scope.tabelaData = placarInstance.getJogosDoDia();
+    $scope.campeonato = {
+      nome: 'diarios'
+    };
     $scope.showLoading = false;
   } else {
     $scope.campeonato = placarInstance.campeonatos[$stateParams.campeonatoId];

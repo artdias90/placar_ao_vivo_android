@@ -9,7 +9,6 @@
             <span ng-if="placar.status == 'Finalizado'" translate="match_finished" translate-values="{date: placar.data}"></span>
             <div ng-if="placar.rodada != ''" translate="round" translate-values="{round_number: placar.rodada}"></div>
                     <span class="mandanteInfo">
-                        <img class="escudo" src="http://www.futebolinterior.com.br/Imagem/{{placar.id_escudom}}/52x52">
                         <div class="time">{{placar.mandante}}</div>
                     </span>
                     <span class="placar">
@@ -18,7 +17,6 @@
                         <strong>{{placar.ptn_visitante}}</strong>
                     </span>
                     <span class="visitanteInfo">
-                        <img  class="escudo" src="http://www.futebolinterior.com.br/Imagem/{{placar.id_escudov}}/52x52">
                         <div class="time-direito">{{placar.visitante}}</div>
                     </span>
             <div ng-if="placar.estadio" translate="stadium" translate-values="{stadium: placar.estadio}"></div>
