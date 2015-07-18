@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="991c840a-8371-4741-bb62-d8701880c705" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/configuracoes.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/campeonatos.css" afterPath="$PROJECT_DIR$/www/css/campeonatos.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/partials/campeonatos.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/partials/campeonatos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/partials/campeonatos.html" afterPath="$PROJECT_DIR$/www/partials/campeonatos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/partials/config.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/partials/config.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/partials/config.html" afterPath="$PROJECT_DIR$/www/partials/config.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/styles.css" afterPath="$PROJECT_DIR$/www/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/tabela.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/tabela.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/tabela.css" afterPath="$PROJECT_DIR$/www/css/tabela.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/partials/tabela.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/partials/tabela.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/partials/tabela.html" afterPath="$PROJECT_DIR$/www/partials/tabela.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/css/time.css" afterPath="$PROJECT_DIR$/platforms/android/assets/www/css/time.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/time.css" afterPath="$PROJECT_DIR$/www/css/time.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/partials/time.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/partials/time.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/partials/time.html" afterPath="$PROJECT_DIR$/www/partials/time.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/translation-table.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/translation-table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/translation-table.js" afterPath="$PROJECT_DIR$/www/js/translation-table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="placar_ao_vivo_android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +27,30 @@
     <favorites_list name="placar_ao_vivo_android" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43543223" vertical-offset="0" max-vertical-offset="937">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="2329">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+              <folding>
+                <marker date="1437202913348" expanded="true" signature="1019:3891" placeholder="/**$locationProvider.html5Mode({ ...*/" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,8 +73,8 @@
         <option value="$PROJECT_DIR$/www/css/styles.css" />
         <option value="$PROJECT_DIR$/www/partials/campeonatos.html" />
         <option value="$PROJECT_DIR$/www/partials/tabela.html" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -184,7 +187,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../codeam-ruby" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="tabe&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/tabela.html&#10;st&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/styles.css&#10;time&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/time.html&#10;camp&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/campeonatos.css&#10;cam&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/campeonatos.html&#10;tra&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;hea&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/header.css&#10;con&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/config.html&#10;tran&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;header&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/header.html&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/app.js&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/index.html&#10;head&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/header.css&#10;serv&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/services.js&#10;styl&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/style.css&#10;tr&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/index.html&#10;notif&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/notificacao.js" />
+    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/app.js&#10;tabe&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/tabela.html&#10;st&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/styles.css&#10;time&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/time.html&#10;camp&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/campeonatos.css&#10;cam&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/campeonatos.html&#10;tra&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;hea&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/header.css&#10;con&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/config.html&#10;tran&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;header&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/partials/header.html&#10;inde&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/index.html&#10;head&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/header.css&#10;serv&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/services.js&#10;styl&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/css/style.css&#10;tr&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/translation-table.js&#10;index&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/index.html&#10;notif&#9;FILE&#9;file://C:/xampp/htdocs/placar_ao_vivo_android/www/js/notificacao.js" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -276,7 +279,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268921" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996973" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -284,7 +287,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25586355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2595949" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2595949" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -340,7 +343,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2108">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1437202913348" expanded="true" signature="1019:3891" placeholder="/**$locationProvider.html5Mode({ ...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -370,7 +375,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="121" max-vertical-offset="2142">
           <caret line="20" column="26" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1437202913348" expanded="true" signature="1019:3891" placeholder="/**$locationProvider.html5Mode({ ...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -400,7 +407,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2142">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1437202913348" expanded="true" signature="1019:3891" placeholder="/**$locationProvider.html5Mode({ ...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -430,7 +439,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2142">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1437202913348" expanded="true" signature="1019:3891" placeholder="/**$locationProvider.html5Mode({ ...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -453,7 +464,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1437202913348" expanded="true" signature="1019:3891" placeholder="/**$locationProvider.html5Mode({ ...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -469,7 +482,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1437202913348" expanded="true" signature="1019:3891" placeholder="/**$locationProvider.html5Mode({ ...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -581,14 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21052632" vertical-offset="310" max-vertical-offset="2159">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/campeonatos.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.741433" vertical-offset="0" max-vertical-offset="963">
@@ -609,14 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14514408" vertical-offset="0" max-vertical-offset="937">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45357525" vertical-offset="0" max-vertical-offset="937">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -657,6 +656,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
           <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="344" max-vertical-offset="2329">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding>
+            <marker date="1437202913348" expanded="true" signature="1019:3891" placeholder="/**$locationProvider.html5Mode({ ...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43543223" vertical-offset="0" max-vertical-offset="937">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
         </state>
       </provider>

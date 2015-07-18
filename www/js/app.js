@@ -29,6 +29,16 @@ tabelaApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         });
 
     $urlRouterProvider.otherwise("/");
+
+    /** REMOVER QUANDO FOR CRIAR APK
+    $locationProvider.html5Mode({
+      enabled: true,
+      hashPrefix: '!',
+      requireBase: false
+     });
+
+     **/
+
   }]);
 
 tabelaApp.run(['placarService', '$translate', function(placarService, $translate) {
